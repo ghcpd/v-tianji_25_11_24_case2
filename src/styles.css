@@ -1,0 +1,24 @@
+:root{
+  --bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial;background:linear-gradient(180deg,#07102a, #07102a 50%);color:#fff}
+.container{max-width:1000px;margin:0 auto;padding:32px}
+.hero{padding:48px 0;text-align:center}
+.subtitle{color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.metrics{grid-column:1}
+.panel{grid-column:2;background:var(--card);padding:16px;border-radius:12px}
+.cards{display:flex;gap:12px}
+.metric-card{background:linear-gradient(180deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter:blur(6px);padding:18px;border-radius:12px;flex:1}
+.metric-header h3{margin:0;font-weight:600}
+.metric-value{font-size:22px;margin-top:8px;color:var(--accent)}
+.unit{font-weight:600;color:var(--muted);font-size:13px}
+.goal-form{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.goal-form input{padding:8px;border-radius:8px;border:0;background:var(--glass);color:#fff}
+.goal-form button{padding:10px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700}
+.summary{margin-top:8px}
+.summary-row{display:flex;justify-content:space-between;padding:10px;border-radius:8px;background:linear-gradient(90deg,rgba(255,255,255,0.01), rgba(255,255,255,0.02));margin-bottom:6px}
+.summary-row.soft{background:transparent;color:var(--muted)}
+.bold{font-weight:700}
+.footer{padding:20px;text-align:center;color:var(--muted)}
