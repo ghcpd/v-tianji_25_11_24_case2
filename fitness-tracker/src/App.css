@@ -1,0 +1,99 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-subtitle {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding: 0 4px;
+}
+
+.metrics-section {
+  margin-bottom: 48px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.goals-section {
+  margin-bottom: 48px;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.summary-section {
+  margin-bottom: 48px;
+}
+
+.app-footer {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 12px;
+  }
+
+  .app-title {
+    font-size: 32px;
+  }
+
+  .app-subtitle {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .metrics-grid,
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-stats {
+    grid-template-columns: 1fr !important;
+  }
+}
